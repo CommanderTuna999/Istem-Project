@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bqrjsxv5wpibm"]
+
+[ext_resource type="Texture2D" uid="uid://dq0p1j70sroyk" path="res://assets/femboy_pixel_art_by_ghostytoons_djgzbss-fullview.png" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://7mukx3n7qdwo" path="res://scripts/player.gd" id="1_g2els"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
+atlas = ExtResource("1_3vyb7")
+region = Rect2(0, 0, 1280, 1280)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sh265"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2els")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qhqgy"]
+radius = 194.0
+height = 1100.0
+
+[node name="player" type="CharacterBody2D" unique_id=2049419943]
+modulate = Color(10.446363, 0.4666668, 15.078727, 1)
+position = Vector2(1.5258789e-05, -1)
+scale = Vector2(0.1, 0.1)
+script = ExtResource("1_g2els")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1685260799]
+position = Vector2(23, -19)
+sprite_frames = SubResource("SpriteFrames_sh265")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=435479015]
+shape = SubResource("CapsuleShape2D_qhqgy")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1964454338]
+position_smoothing_enabled = true
