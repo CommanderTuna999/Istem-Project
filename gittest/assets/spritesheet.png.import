@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq0p1j70sroyk"
-path="res://.godot/imported/femboy_pixel_art_by_ghostytoons_djgzbss-fullview.png-a72b3f41ea4293f3b2c7cac1c7f3ec35.ctex"
+uid="uid://blowh3mprn8ry"
+path="res://.godot/imported/spritesheet.png-76e0b916bc20d45ac6900db6e21d8a9e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/femboy_pixel_art_by_ghostytoons_djgzbss-fullview.png"
-dest_files=["res://.godot/imported/femboy_pixel_art_by_ghostytoons_djgzbss-fullview.png-a72b3f41ea4293f3b2c7cac1c7f3ec35.ctex"]
+source_file="res://assets/spritesheet.png"
+dest_files=["res://.godot/imported/spritesheet.png-76e0b916bc20d45ac6900db6e21d8a9e.ctex"]
 
 [params]
 

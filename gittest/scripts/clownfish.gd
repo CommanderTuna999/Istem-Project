@@ -4,12 +4,9 @@ var aggro = false
 var chase_subject = null
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
-
-
-
-
-
-func _process(delta):
+	
+	
+func _process(_delta):
 	if not chase_subject == null and chase_subject.position.x > position.x:
 		animated_sprite_2d.flip_h = false
 	elif not chase_subject == null and chase_subject.position.x < position.x:
@@ -24,7 +21,7 @@ func _on_aggro_area_body_entered(body):
 	
 	
 	
-func _on_aggro_area_body_exited(body: Node2D) -> void:
+func _on_aggro_area_body_exited(_body: Node2D) -> void:
 	chase_subject = null
 	aggro = false
 	print("exited")

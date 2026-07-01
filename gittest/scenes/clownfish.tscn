@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://nv8ffxb2nt3g"]
 
-[ext_resource type="Script" uid="uid://dk0mmjspv6ijy" path="res://scripts/fish.gd" id="1_8g0i4"]
+[ext_resource type="Script" uid="uid://dk0mmjspv6ijy" path="res://scripts/clownfish.gd" id="1_8g0i4"]
 [ext_resource type="Texture2D" uid="uid://c3wsl0ix240it" path="res://assets/pixel-art-tropical-fish-pixelated-sea-fish-ocean-sea-fish-icons-background-pixelated-for-the-pixel-art-game-and-icon-for-website-and-video-game-old-school-retro-vector-removebg-preview.png" id="2_8g0i4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nub35"]
@@ -18,15 +18,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n6yr6"]
-size = Vector2(31, 32)
+[sub_resource type="CircleShape2D" id="CircleShape2D_47ae7"]
+radius = 13.536986
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8g0i4"]
-radius = 385.0117
+radius = 606.0528
 
-[node name="fish" type="CharacterBody2D" unique_id=1111911240]
-collision_layer = 2
-collision_mask = 3
+[node name="clownfish" type="CharacterBody2D" unique_id=1111911240 groups=["clownfish"]]
+collision_layer = 8
+collision_mask = 10
 script = ExtResource("1_8g0i4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=330375805]
@@ -37,7 +37,7 @@ sprite_frames = SubResource("SpriteFrames_qi2p4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1121136378]
 position = Vector2(-0.5, 0)
-shape = SubResource("RectangleShape2D_n6yr6")
+shape = SubResource("CircleShape2D_47ae7")
 
 [node name="aggro_area" type="Area2D" parent="." unique_id=785846885]
 
